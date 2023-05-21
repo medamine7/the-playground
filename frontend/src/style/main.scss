@@ -1,0 +1,17 @@
+@import '_variables';
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--theplayground-black-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
+  font-family: var(--theplayground-font-primary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
