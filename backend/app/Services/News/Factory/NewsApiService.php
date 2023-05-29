@@ -22,9 +22,12 @@ class NewsApiService implements NewsServiceInterface
                 'query' => [
                     'pageSize' => $pageSize,
                     'page' => $page,
+                    'country' => 'us',
+                    'language' => 'en',
                 ],
             ])
             ->get('/top-headlines');
+
         return $response->json();
     }
 
@@ -61,7 +64,6 @@ class NewsApiService implements NewsServiceInterface
     }
 
     public function getOne($id) {
-        dd($id);
         $response = $this
             ->client
             ->withOptions([
